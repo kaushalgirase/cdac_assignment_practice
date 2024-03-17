@@ -14,23 +14,24 @@ private:
 
 public:
   
-    Volume(int len, int brd, int hgt) : length(len), breadth(brd), height(hgt) {}
+    Volume(int len, int brt, int hgt) : length(len), breadth(brt), height(hgt) {}
 
-    int calculateVolume() {
+    int calculateVolume() 
+    {
         return length * breadth * height;
     }
 };
 
 int main() {
-    int len, brd, hgt;
+    int len, brt, hgt;
     cout << "Enter length of the box: ";
     cin >> len;
     cout << "Enter breadth of the box: ";
-    cin >> brd;
+    cin >> brt;
     cout << "Enter height of the box: ";
     cin >> hgt;
 
-    Volume box(len, brd, hgt);
+    Volume box(len, brt, hgt);
 
     cout << "Volume of the box: " << box.calculateVolume();
 
