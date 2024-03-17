@@ -21,13 +21,13 @@ public:
     }
 
   
-    double calculateArea() {
+       int calculateArea() {
         double s = (side1 + side2 + side3) / 2; 
         return sqrt(s * (s - side1) * (s - side2) * (s - side3)); 
     }
 
    
-    double calculatePerimeter() {
+     int  calculatePerimeter() {
         return side1 + side2 + side3;
     }
 };
