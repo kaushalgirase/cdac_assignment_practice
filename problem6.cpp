@@ -10,25 +10,26 @@ using namespace std;
 
 class Area {
 private:
-    double length;
-    double breadth;
+    int length;
+    int breadth;
 
 public:
-    void setDim(double len, double brt) {
+    void setDim(double len, int brt) {
         length = len;
         breadth = brt;
     }
 
     
-    double getArea() {
+     getArea() {
         return length * breadth;
     }
 };
 
 int main() {
+    
     Area rect;
 
-    double len, brt;
+    int len, brt;
     cout << "Enter length of the rectangle: ";
     cin >> len;
     cout << "Enter breadth of the rectangle: ";
